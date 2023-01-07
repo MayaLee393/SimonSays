@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Simon Says</title>
+</head>
+
+<body>
+   
+    <h1>Simon Says</h1>
+    <p id=over></p>
+    <div id=score>
+        HIGHSCORE: 0
+    </div>
+    <div id=page>
+<div id=game>
+        <button class=square id=1 onclick=play(1)><img src="images/lion.jpg"></button>
+        <button class=square id=2 onclick=play(2)><img src="images/dog.jpg"></button>
+        <button class=square id=3 onclick=play(3)><img src="images/monkey.jpg"></button>
+        <button class=square id=4 onclick=play(4)><img src="images/bird.jpg"></button>
+  
+    </div>
+    <div id=instructions>
+       <button id=int-head onclick="instructions()">Instructions</button>
+       <p id=int-con></p>
+    </div>
+    <div id=start>
+        <button id=start-button onclick="start()">START</button>
+    </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="simonSays.js"></script>
+</body>
+
+</html>
